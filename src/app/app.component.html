@@ -1,2 +1,24 @@
 
 <router-outlet></router-outlet>
+<div class="per_page_container">
+  <p class="">Show {{per_page}} commits</p>
+  <mat-form-field>
+    <mat-select (selectionChange)="setPerPage(per_page)" [(value)]="per_page">
+      <mat-option value="10">10</mat-option>
+      <mat-option value="20">20</mat-option>
+      <mat-option value="50">50</mat-option>
+      <mat-option value="100">100</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<ol>
+  <li *ngFor="let obj of (commits)">
+    <div>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+        <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+      </svg>
+    </div>
+    <h2 class="f5 text-normal color-fg-muted">Commits on {{obj.date}}</h2>
+    <app-commit-short-view [commitData]="commit" *ngFor="let commit of obj.commits"></app-commit-short-view>
+  </li>
+</ol>

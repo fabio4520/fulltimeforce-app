@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+ol li {
+  list-style: none;
+}
+
+.color-fg-muted {
+  color: #a6afbcb5;
+}
+
+.f5 {
+  font-size: 14px;
+}
+
+.f6 {
+  font-size: 12px;
+}

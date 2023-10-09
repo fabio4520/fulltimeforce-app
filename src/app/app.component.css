@@ -1,0 +1,23 @@
+.per_page_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.per_page_container select {
+  width: 10px;
+  height: 10px;
+  color: black;
+}
+
+.per_page_container p {
+  margin-right: 10px;
+}
+
+.octicon {
+  display: inline-block;
+  overflow: visible;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}

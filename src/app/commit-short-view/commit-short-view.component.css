@@ -1,4 +1,6 @@
-
+.commit {
+  margin: .5rem 1rem .5rem 0;
+}
 .li-item {
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -12,6 +14,18 @@
 .li-item a {
   text-decoration: none;
   color: white;
+}
+.commit-avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.avatar {
+  max-width: 100px;
+}
+.commit-info {
+  max-width: 500px;
 }
 .avatar-user {
   border-radius: 50%;
