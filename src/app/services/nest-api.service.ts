@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class NestApiService {
 
-  private baseUrl = 'http://localhost:3000/github';
+  // private baseUrl = 'http://localhost:3000/github';
+  private baseUrl = 'https://fulltimeforce-api.onrender.com/github';
 
   constructor(
     private http: HttpClient
