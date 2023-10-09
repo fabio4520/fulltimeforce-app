@@ -1,0 +1,35 @@
+<div>
+  <!-- Image -->
+  <div>
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-git-commit">
+      <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+  </svg>
+  </div>
+  <!-- info of commit -->
+  <div class="">
+    <h2 class="f5 text-normal color-fg-muted">Commits on {{commit?.date}}</h2>
+    <ol>
+      <li class="li-item">
+        <p class="mb-1">
+          <a class="text-bold" href={{commit?.url}}>{{commit?.message}}</a>
+        </p>
+
+        <div class="d-flex flex-items-center">
+          <!-- Avatar -->
+          <div class="AvatarStack flex-self-start ">
+            <div class="AvatarStack-body">
+              <a class="avatar avatar-user" style="width:20px;height:20px;" href={{author?.url}}>
+                <img src={{author?.avatar_url}} width="20" height="20" alt={{author?.login}} class=" avatar-user">
+              </a>
+            </div>
+          </div>
+          <!-- Info of commit -->
+          <div class="f6 color-fg-muted min-width-0">
+            <p class="commit-author user-mention">{{author?.login}}</p>
+          committed on {{commit?.date}}
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
