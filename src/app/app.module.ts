@@ -9,11 +9,16 @@ import { DatePipe } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { LinkDialogComponent } from './link-dialog/link-dialog.component';
+import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CommitShortViewComponent
+    CommitShortViewComponent,
+    LinkDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +27,9 @@ import { MatSelectModule } from '@angular/material/select';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatDialogModule,
+    FormsModule,
+    NgbModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
