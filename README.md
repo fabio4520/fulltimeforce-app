@@ -1,27 +1,52 @@
-# FulltimeforceApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+# FullTimeForce App
 
-## Development server
+This is a Dockerized Angular application that uses Nginx to serve the static files of the app.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+Follow these instructions to get the project up and running in your local development environment.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This app has been deployed and you can find it in the following link
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Before you begin, make sure you have the following software installed on your machine:
 
-## Running unit tests
+- [Docker](https://www.docker.com/get-started)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. Clone the repository to your local machine:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   git clone https://github.com/fabio4520/fulltimeforce-app.git
+   cd fulltimeforce-app
+   ```
 
-## Further help
+2. Build the Docker image for the Angular app:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   docker build -t fulltimeforceapp .
+   ```
+
+### Running the App
+
+Once the Docker image is built, you can run a Docker container to start the Angular app.
+
+```bash
+docker run -d -p 8080:80 fulltimeforceapp
+```
+
+This command maps port 8080 on your host machine to port 80 inside the Docker container. Adjust the port numbers as needed.
+
+### Accessing the App
+
+You can now access the Angular app in your web browser by navigating to [http://localhost:8080](http://localhost:8080). If you mapped a different port, use that port number instead.
+
+
+# Images
+![Alt text](image.png)
+![Alt text](image-2.png)
+![Alt text](image-1.png)
+
